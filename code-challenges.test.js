@@ -14,9 +14,52 @@
 // Reminder: The test will call your function
 
 
-// --------------------1) Create a function that takes in a number (greater than 2) and returns an array of that length containing the numbers of the Fibonacci.
 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// --------------------1) Create a function that takes in a number (greater than 2) and returns an array of that length containing the numbers of the Fibonacci.
 // a) Create a test with expect statements for each of the variables provided.
+// Example input: 6
+// Expected output: [1, 1, 2, 3, 5, 8]
+
+// Example input: 10
+// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+////////////////////////////////////////////////////////////
+
+//git a yarn jest tester template.
+// describe what I want to do
+    //create a fn that can take in an array of numbers
+    //add num [0] + [1]
+    //hold that "added number" in a new array
+    // add num [2] to new, and hold it in new array
+        //new arrayy is gong to be retunred
+//input......should it be albe to take in muiltipe numbers?
+
+// describe("takes in a number", () => {
+//     it("returns an fibonacci, array", () => {
+//       expect(numberGoingIn(6)).toEqual("fibOut([1, 1, 2, 3, 5, 8])")
+//     })
+// })
+var fibNums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+var numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]   
+var numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]   
+var numbers3 = [1, 1]
+
+
+const numberGoingIn = (number) => {
+     if (number >= 2){
+         for (let i = 0; i < fibNums.length.slice(0, number); i++) {
+            return fibNums[i]
+         }
+    }
+} 
+
+
+console.log(numberGoingIn(6))
 
 // Example input: 6
 // Expected output: [1, 1, 2, 3, 5, 8]
@@ -28,6 +71,7 @@
 
 // b) Create the function that makes the test pass.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // --------------------2) Create a function that takes in an array and returns a new array of only odd numbers sorted from least to greatest.
